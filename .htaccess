@@ -1,1 +1,7 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^studyrails.com [NC]
+RewriteRule ^(.*)$ https://professorfinder.com/$1 [L,R=301]
 
+RewriteCond %{HTTP_HOST} ^www.studyrails.com [NC]
+RewriteRule ^(.*)$ https://professorfinder.com/$1 [L,R=301]
